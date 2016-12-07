@@ -1,0 +1,37 @@
+/*
+
+Dylan Tucker 
+12-7-16
+Arrays and Objects Quiz
+
+*/
+
+var myArray = ["Jon", "Tan", 10, true];
+console.log(myArray[2]);
+
+function Gateway(open) {
+  if (open == true) {
+    console.log(myArray[0] + " " + myArray[1] + " you may pass through gateway number " + myArray[2])
+  } else {
+    console.log("You Shall Not Pass!")
+  }
+}
+
+Gateway(myArray[3]);
+
+var batman = {
+  Man : true,
+  utilityBelt : ["Bat Blade", "Kryptonite Spear", "Ultimate Flashlight"],
+  vehicle : "batmobile",
+  sidekick : "robin",
+};
+
+function whoIsBatman(Man) {
+  if (Man == true) {
+    console.log(batman.sidekick + " and Batman are cruising in the " + batman.vehicle + " using the " + batman.utilityBelt[2] +  " to defeat evil!!!")
+  } else {
+    console.log("No, I'm the Bat")
+  }
+}
+
+whoIsBatman(batman.Man);
